@@ -1,0 +1,198 @@
+/* SIMPLE RESET */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	margin:0;
+	padding:0;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* FONT STYLES */
+
+html, aside ol li:nth-of-type(2) {
+
+	font-family: 'Merriweather', serif;
+	font-size: 16px;
+	line-height: 1.125em;
+
+}
+
+h1, h2, h3, h4, h5, h6, aside ol {
+
+	font-family: 'Oswald', sans-serif;
+
+}
+
+/* STUDENT STYLES */
+
+body {
+	max-width: 940px;
+	margin: 0 auto 10rem auto;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	color: orange;
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #333;
+}
+
+ol {
+	list-style-position: inside;
+}
+
+header {
+	margin-top: 1.2rem;
+	padding-top: 3.5rem;
+	margin-bottom: 5rem;
+	padding-bottom: 5rem;
+	background-color: #eee;
+}
+
+header h1 {
+	font-size: 4.5rem;
+	text-align: center;
+	line-height: 1.5em;
+	text-transform: uppercase;
+}
+
+
+/* Code for centered horizontal nav taken from:  http://csswizardry.com/2011/01/create-a-centred-horizontal-navigation */
+header nav {
+	text-align: center;
+}
+
+header li {
+	list-style-type: none;
+	display: inline;
+	padding: 0 5px;
+	font-size: .9rem;
+}
+
+section {
+	width: 66%;
+	float: left;
+	margin-bottom: 8rem;
+}
+
+section h1 {
+	font-size: 3.5rem;
+	line-height: 1em;
+}
+article {
+	position: relative;
+}
+
+article span:first-child {
+	position: absolute;
+	display: block;
+	top: 4.6rem;
+	left: 1.3rem;
+	padding-top: 1.5rem;
+	padding-left: 1rem;
+	height: 6rem;
+	width: 6rem;
+	border-radius: 50%;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+	background-color: orange;
+	color: white;
+	font-size: 2rem;
+	font-weight: 300;
+	z-index: 9;
+    -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+    transform: rotate(-20deg);
+}
+
+article h2 {
+	font-size: 3rem;
+	line-height: 1em;
+	margin-top: 4rem;
+	margin-bottom: .5rem;
+}
+
+article span:last-child {
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+article img {
+	width: 620px;
+}
+
+article p {
+	padding-top: .6em;
+}
+
+aside {
+	width: 23.4%;
+	float: right;
+	text-align: center;
+}
+
+aside h1 {
+	line-height: 1.5em;
+}
+
+aside a {
+	font-size: .8rem;
+}
+
+aside li[id] {
+	position: relative;
+	height: 276px;
+	margin-top: 1rem;
+	font-weight: 300;
+	font-size: 1.2rem;
+}
+
+aside img {
+	position: absolute;
+	width: 220px;
+	top: 1.75rem;
+	right: 0;
+}
+
+footer {
+	clear: both;
+	padding-bottom: 5rem;
+}
+
+footer h1 {
+	font-size: 1.2rem;
+	margin-top: 4rem;
+	line-height: 1.5em;
+}
+
+footer p {
+	font-size: .8rem;
+	margin-bottom: 2rem;
+}
+
+footer h2 {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+footer ol, footer ul {
+	width: 33%;
+	float: left;
+}
+
+footer ul {
+	list-style-type: none;
+}
