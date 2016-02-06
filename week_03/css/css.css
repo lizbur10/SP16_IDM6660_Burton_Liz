@@ -1,0 +1,203 @@
+/* SIMPLE RESET */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	margin:0;
+	padding:0;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* FONT STYLES */
+
+html, aside ol li:nth-of-type(2) {
+
+	font-family: 'Merriweather', serif;
+	font-size: 16px;
+	line-height: 1.125em;
+
+}
+
+h1, h2, h3, h4, h5, h6, aside ol {
+
+	font-family: 'Oswald', sans-serif;
+
+}
+
+/* STUDENT STYLES */
+
+body {
+	max-width: 97.9166667%; /* 940px / 960px */
+	margin: 0 auto 16.66666667%; /* 160px / 960px */
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	color: orange;
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #333;
+}
+
+ol {
+	list-style-position: inside;
+}
+
+header {
+	width: 100%;
+	margin-top: 2.1276596%; /* 20px / 940px */
+	padding-top: 5.9574468%; /* 56px / 940px */
+	margin-bottom: 8.5106383%; /* 80px / 940px */
+	padding-bottom: 8.5106383%; /* 80px / 940px */
+	background-color: #eee;
+}
+
+header h1 {
+	font-size: 4.5rem;
+	text-align: center;
+	line-height: 1.5em;
+	text-transform: uppercase;
+}
+
+
+/* Code for centered horizontal nav found here:  http://csswizardry.com/2011/01/create-a-centred-horizontal-navigation */
+header nav {
+	text-align: center;
+}
+
+header li {
+	list-style-type: none;
+	display: inline;
+	padding: 0 0.5319149%; /* 5px / 940px */
+	font-size: .9rem;
+}
+
+section {
+	width: 76.5957447%; /* 720px / 940px  */
+	float: left;
+	padding-right: 10.6382979%; /* 100px / 940px */
+	margin-bottom: 13.6170213%; /* 128px / 940px */
+}
+
+section h1 {
+	font-size: 3.5rem;
+	line-height: 1em;
+}
+article {
+	position: relative;
+}
+
+article span:first-child {
+	position: absolute;
+	display: block;
+	height: 3em;
+	width: 3em;
+	top: 8.5%; /* arrived at this value through trial and error */
+	left: 3.3870968%; /* 21px / 620px */
+	padding-top: .75em; /* 24px / 620px  */
+	padding-left: .5em; /* 16px / 620px */
+	border-radius: 50%;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+	background-color: orange;
+	color: white;
+	font-size: 2rem;
+	font-weight: 300;
+	z-index: 9;
+    -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+    transform: rotate(-20deg);
+}
+
+article h2 {
+	font-size: 3rem;
+	line-height: 1em;
+	margin-top: 11.2903226%; /* 70px / 620px */
+	margin-bottom: 1.2903226%; /* 8px / 620px */
+}
+
+article span:last-child {
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+article img {
+	max-width: 100%;
+}
+
+article p {
+	padding-top: 1.6129032%; /* 10px / 620px */
+}
+
+aside {
+	width: 23.4042553%; /* 220px / 940px */
+	float: right;
+	text-align: center;
+}
+
+aside h1 {
+	line-height: 1.5em;
+}
+
+aside a {
+	font-size: .8rem;
+}
+
+aside li:nth-child(2) {
+	margin-bottom: 7.2727272727%; /* 16px / 220px */
+}
+
+aside li[id] {
+	position: relative;
+	padding-bottom: 125%; /* http://stackoverflow.com/questions/1495407/maintain-the-aspect-ratio-of-a-div-with-css */
+	font-weight: 300;
+	font-size: 1.2rem;
+}
+
+aside img {
+	position: absolute;
+	max-width: 100%; 
+	top: 12.7272727%;
+	right: 0;
+}
+
+footer {
+	clear: both;
+	padding-bottom: 8.5106383%; /* 80px / 940px */
+}
+
+footer h1 {
+	font-size: 1.2rem;
+	margin-top: 6.8085106%; /* 64px / 940px */
+	line-height: 1.5em;
+}
+
+footer p {
+	font-size: .8rem;
+	margin-bottom: 3.4042553%; /* 32px / 940px */
+}
+
+footer h2 {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+footer ol, footer ul {
+	width: 33%;
+	float: left;
+}
+
+footer ul {
+	list-style-type: none;
+}
