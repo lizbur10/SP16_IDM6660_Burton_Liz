@@ -27,7 +27,7 @@ body {
 	margin-bottom: 3%;
 }
 
-article:nth-child(3n+1) {
+article:nth-of-type(4n) {
 	clear: both;
 }
 
