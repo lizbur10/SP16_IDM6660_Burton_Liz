@@ -33,7 +33,9 @@ h1, h2, h3, h4, h5, h6, aside ol {
 /* STUDENT STYLES */
 
 body {
-	max-width: 97.9166667%; /* 940px / 960px */
+/*	max-width: 97.9166667%; /* 940px / 960px */
+	max-width: 940px;
+	padding: 0 1.0416667%;
 	margin: 0 auto 16.66666667%; /* 160px / 960px */
 }
 
@@ -95,6 +97,7 @@ section h1 {
 	font-size: 3.5rem;
 	line-height: 1em;
 }
+
 article {
 	position: relative;
 }
@@ -106,8 +109,8 @@ article span:first-child {
 	width: 3em;
 	top: 8.5%; /* arrived at this value through trial and error */
 	left: 3.3870968%; /* 21px / 620px */
-	padding-top: .75em; /* 24px / 620px  */
-	padding-left: .5em; /* 16px / 620px */
+	padding-top: .75em;
+	padding-left: .5em;
 	border-radius: 50%;
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
 	background-color: orange;
@@ -201,3 +204,136 @@ footer ol, footer ul {
 footer ul {
 	list-style-type: none;
 }
+
+
+/* START OF MEDIA QUERY */
+
+@media screen and (max-width: 480px) {
+	body {
+		background-color: orange;
+		margin-bottom: 0;
+	}
+
+	a:hover {
+		color: #FFF;
+	}
+
+
+	header {
+		background-color: orange;
+		padding-top: 0;
+		margin-bottom: 4%;
+		margin-left: 1%;
+	}
+
+	header h1 {
+		font-size: 2rem;
+		padding: 2.5% 0;
+	}
+
+	header nav a:hover {
+		color: orange;
+	}
+
+	header nav li {
+		display: inline-block;
+		background-color: #FFF;
+		width: 48%;
+		padding: 2%;
+		margin: 2.5% .5%;
+		line-height: 1.7em;
+	}
+
+	section {
+		width: 100%;
+		float: none;
+		padding: 0 .5% 4%;
+	}
+
+	section h1 {
+		font-size: 2rem;
+		margin-left: 2%;
+
+	}
+
+	article {
+		margin: 0 2%;
+	}
+
+	article h2 {
+		font-size: 2rem;
+		margin-top: 18%; 
+		padding-bottom: 2%;
+	}
+
+	article span:first-child {
+		font-size: 1.2rem;
+		height: 5em;
+		width: 5em;
+		top: 7%;
+		left: 3%; 
+		padding-top: 1.6em; 
+		padding-left: 1.5em; 
+
+	}
+
+	article span:nth-child(2) {
+		font-size: 1.4rem;
+	}
+
+	article img {
+		max-width: 108%;
+		padding: 0;
+		margin: 2% -3.5%;
+	}
+
+	article p {
+		padding-top: 3%; 
+	}
+
+	aside {
+		width: 100%; 
+		float: none;
+		text-align: center;
+	}
+
+	aside li {
+		width: 50%;
+		float: left;
+	}
+
+	aside li:first-child, aside li:nth-child(2) {
+		width: 100%;
+	}
+
+	aside li:nth-child(2) {
+		margin-bottom: 5%;
+	}
+
+	aside li[id] {
+		padding-bottom: 56%;
+	}
+
+	aside img {
+		max-width: 82%;
+		right: 10%;
+		top: 11%;
+	}
+
+	footer {
+		padding-left: 2%;
+	}
+
+	footer p {
+		margin-bottom: 8%;
+	}
+
+	footer ol, footer ul {
+		width: 100%;
+		float: none;
+		padding-left: 5%;
+		margin-top: 5.5%;
+	}
+
+}
+
