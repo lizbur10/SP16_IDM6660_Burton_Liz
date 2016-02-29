@@ -1,0 +1,23 @@
+@media screen and (min-width: 840px) {
+		nav li {
+		font-size: 1.1rem;
+	}
+
+}
+
+@media screen and (min-width: 960px) {
+
+	nav li {
+		font-size: 1.25rem;
+	}
+}
+
+@media screen and (min-width: 1060px) {
+	body {
+		padding: 0;
+	}
+
+	nav li {
+		padding: 5px 16px;
+	}
+}

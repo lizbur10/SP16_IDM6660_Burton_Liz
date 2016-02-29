@@ -1,0 +1,120 @@
+@media screen and (min-width: 481px) {
+
+	body {
+ 		margin: 0 auto;
+ 		padding: 0 5%;
+	}
+
+	.hamburger {
+		margin-top: 10px;
+	}
+
+	h2 {
+		display: block;
+		font-size: 1.5rem;
+		margin-bottom: 0;
+		color: orange;
+
+	}
+
+	p.past-issues {
+		display: block;
+		float: right;
+		margin-top: -60px;
+	}
+
+	.masthead img {
+		margin-left: -1%;
+	}
+
+	#section-nav {
+		display: none;
+	}
+
+	.patterns {
+		position: relative;
+		width: 65%;
+		float: left;
+		padding: 0 5% 0 0;
+		margin-bottom: 40px;
+	}
+
+	.social li {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.social img {
+		width: 18px;
+	}
+
+	.sidebar {
+		width: 35%;
+		float: left;
+		margin-top: 50px;
+		padding: 0 0 0 10%;
+	}
+
+	.sidebar h2 {
+		display: block;
+	}
+
+	.sidebar article {
+		position: relative;
+		display: block;
+		width: 100%;
+	}
+
+	.sidebar div {
+		margin-top: 50px;
+	}
+
+	.sidebar h3 {
+		margin-bottom: 10px;
+	}
+
+	.sidebar h4 {
+		position: relative;
+		display: block;
+		color: #555;
+		margin-top: 0;
+		margin-left: 6px;
+		padding-left: 3px;
+	}
+
+ 	.sidebar h4:before {
+ 		content: '';
+ 		position: absolute;
+ 		top: 3px;
+ 		left: -5px;
+ 		width: 0; 
+		height: 0; 
+		border-top: 5px solid transparent;
+		border-bottom: 5px solid transparent;
+		border-left: 5px solid #555;
+	}
+
+	.articles, .reviews {
+		display: block;
+	}
+
+	#jmml-field {
+		height: 50px;
+		font-size: 1.3rem;
+	}
+
+	.jmml-email[placeholder] {
+		font-size: 1.3rem;
+		padding-left: 10px;
+	}
+
+	.jmml-button {
+		padding: 10px 10px;
+	}
+
+	footer a {
+		bottom: 60px;
+	}
+
+
+}

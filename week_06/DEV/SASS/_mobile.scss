@@ -1,0 +1,256 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Helvetica', Arial, sans-serif;
+	margin: 0 5%;
+	max-width: 960px;
+ }
+
+.visually-hidden {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:visited {
+	color: inherit;
+}
+
+header {
+	position: relative;
+}
+
+.masthead {
+	max-width: 100%;
+	margin-bottom: 0;
+}
+
+.masthead img {
+	max-width: 65%;
+}
+
+header p {
+	font-size: 1.1rem;
+}
+
+header span {
+	border-left: 2px solid black;
+	padding-left: 5px;
+}
+
+nav {
+	display: none;
+}
+
+.hamburger {
+	position: absolute;
+	top: 5px;
+	right: 0;
+}
+
+.hamburger-nav {
+	position: absolute;
+	top: 30px;
+	right: 0;
+	padding: 5px;
+	background-color: white;
+	z-index: 9;
+	border: 1px solid black;
+}
+
+.hamburger-nav li {
+	display: block;
+	padding: 5px;
+	line-height: 2rem;
+	text-align: center;
+}
+
+.orange {
+	background-color: orange;
+}
+
+#section-nav {
+	width: 100%;
+	margin-top: 0;
+}
+
+#section-nav a {
+	text-decoration: none;
+	color: white;
+}
+
+#section-nav ul, #section-nav li {
+	padding: 0;
+	margin-top: -10px;
+}
+
+#section-nav li {
+	height: 40px;
+	margin-top: 2px;
+	padding-top: 10px;
+	float: left;
+	width: 32.5%;
+	background-color: #666;
+	border: 1px #999 solid;
+	text-align: center;
+}
+
+#section-nav li:nth-child(2), #section-nav li:nth-child(3) {
+	border-left: none;
+}
+
+#section-nav li.selected, li.selected {
+	background-color: orange;
+	color: black;
+}
+
+#section-nav li.selected>a {
+	color: black;
+	font-weight: bold;
+}
+
+h2 {
+	display: none;
+}
+
+h3 {
+	color: orange;
+}
+
+article {
+	display: inline-block;
+	margin-top: 5px;
+	padding-top: 5%;
+	max-width: 100%;
+}
+
+article img {
+	max-width: 100%;
+}
+
+.designer {
+	font-size: 0.9rem;
+	margin-top: 0;
+	margin-bottom: 2%;
+	color: #222;
+}
+
+ul {
+	list-style: none;
+}
+
+.social img {
+	width: 24px;
+}
+
+.social {
+	position: relative;
+	height: 60px;
+	width: 100%;
+	margin-top: -62px;
+	padding: 5px 0 0;
+	background-color: rgba(128, 128, 128, 0.7);
+}
+
+.social-buttons {
+	float: left;
+	width: 50%;
+	margin-top: 5px;
+	padding-left: 0;
+}
+
+.social-buttons li {
+	float: left;
+	padding: 10px 10px;
+	cursor: pointer;
+}
+
+.comment-box {
+	float: left;
+	width: 45%;
+	margin-top: 15px;
+	margin-right: 5px;
+ 	height: 1.25rem;
+	border-radius: 4px;
+}
+
+.sidebar h2, .sidebar article {
+	display: none;
+}
+
+.sidebar form {
+	padding: 20px 0;
+}
+
+.sidebar h4 {
+	display: none;
+}
+
+.sidebar a:visited {
+	color: black;
+}
+
+section.jmml {
+	clear: both;
+	margin-top: 30px;
+}
+
+#jmml-field {
+	position: relative;
+	width: 100%;
+	border: 1px solid black;
+	height: 40px;
+	font-size: 1rem;
+	margin-bottom: 80px;
+}
+
+.jmml-email {
+	height: 100%;
+	width: 50%;
+	border: none;
+}
+
+.jmml-email[placeholder] {
+	font-size: 1rem;
+	padding-left: 10px;
+}
+
+.jmml-button {
+	float: right;
+	height: 100%;
+	padding: 8px 8px;
+	background-color: orange;
+	border-left: 1px black solid;
+}
+
+footer {
+	position: relative;
+	clear: both;
+	margin: 30px 0 10px;
+}
+
+footer a {
+	position: fixed;
+	left: 0;
+	bottom: 70px;
+	padding: 0 10px;
+	line-height: 3rem;
+	font-weight: bold;
+	color: blue;
+	background-color: white;
+	border: 1px blue solid;
+	border-left: none;
+}
+
+footer a:visited {
+	color: blue;
+}
+
+.articles, .reviews {
+	display: none;
+}

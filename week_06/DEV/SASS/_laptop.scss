@@ -1,0 +1,124 @@
+@media screen and (min-width: 721px) {
+	body {
+		margin: 0 auto;
+	}
+
+	header {
+		position: relative;
+	}
+
+	header h1 {
+		display: none;
+	}
+
+		header p {
+		display: block;
+		float: right;
+		margin-top: 40px;
+		text-align: right;
+	}
+
+	header span {
+		display: block;
+		border-left: none;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	nav {
+		display: block;
+	}
+
+	nav ul {
+		padding-left: 0;
+	}
+
+	nav li {
+		float: left;
+		font-size: 0.9rem;
+		padding: 6px 9px;
+		border-bottom: 2px solid orange;
+		border-top: 2px solid orange;
+	}
+
+	nav li:first-child {
+		border-left: none;
+	}
+
+	nav li:hover {
+		background-color: orange;
+	}
+
+	p.past-issues {
+		display: none;
+	}
+
+	.patterns {
+		width: 100%;
+		padding: 0;
+	}
+
+	.patterns h2 {
+		margin-top: 50px;
+	}
+
+	.column {
+		width: 33%;
+		float: left;
+		padding: 0 0 0 20px;
+	}
+
+	.column:first-of-type {
+		margin-left: -20px;
+	}
+
+	.social {
+		display: none;
+	}
+
+	.social-buttons li {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.social-buttons img {
+		width: 24px;
+	}
+
+	.sidebar {
+		width: 100%;
+		clear: both;
+		padding: 0;
+		margin-bottom: 30px;
+	}
+
+	.sidebar div {
+		margin-top: 30px;
+	}
+
+	.sidebar article {
+		padding-top: 0;
+	}
+
+	.articles, .reviews {
+		position: relative;
+		clear: both;
+	}
+
+	.articles article, .reviews article {
+		max-width: 150px;
+		float: left;
+		margin-right: 25px;
+	}
+
+	.sidebar div:last-of-type {
+		clear: both;
+	}
+
+	footer a {
+		bottom: 50px;
+	}
+
+}
