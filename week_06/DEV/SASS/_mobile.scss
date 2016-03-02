@@ -170,6 +170,25 @@ ul {
 	cursor: pointer;
 }
 
+/* .social-buttons li a {
+	display: block;
+	height: 24px;
+}
+ */
+
+.social-buttons li.favorite { 
+	margin: 6px 10px 8px 15px;
+	padding: 0;
+	text-indent: -999em;
+	height: 22px;
+	width: 24px;
+	background: url(../img/icons/two-stars-24.png) top center no-repeat;
+}
+
+/* .social-buttons li.favorite a:hover { 
+	background-position: top;
+}
+ */
 .comment-box {
 	float: left;
 	width: 45%;
