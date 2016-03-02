@@ -1,8 +1,7 @@
 @media screen and (min-width: 840px) {
-		nav li {
+	nav li {
 		font-size: 1.1rem;
 	}
-
 }
 
 @media screen and (min-width: 960px) {
@@ -10,6 +9,11 @@
 	nav li {
 		font-size: 1.25rem;
 	}
+
+	.social-buttons {
+		width: 50%;
+	}
+
 }
 
 @media screen and (min-width: 1060px) {
