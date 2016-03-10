@@ -168,7 +168,7 @@ aside li[id] {
 	font-size: 1.2rem;
 }
 
-aside img {
+aside li[id] > img {
 	position: absolute;
 	max-width: 100%; 
 	top: 12.7272727%;

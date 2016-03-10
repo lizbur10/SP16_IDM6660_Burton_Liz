@@ -2,19 +2,52 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="jquery-1.11.3.min.js"></script>
+		<script>
+		    $(function() {
+		    	$(".hamburger").click(function() {
+		    		$(".hamburger-nav").toggleClass("visually-hidden");
+		    	});
+				$(".hamburger-nav li").hover(function() {
+					$(this).toggleClass("orange");
+				});
+				$(".hamburger-nav li").click(function() {
+					$(".hamburger-nav").toggleClass("visually-hidden");
+				});
+			});
+		</script>
 		<title>knitty mobile design</title>
-		<link rel="stylesheet" type="text/css" href="css/css.css">
+		<link rel="stylesheet" type="text/css" href="CSS/css.css">
 	</head>
 
 	<body>
 		<header>
 			<div class="masthead">
-				<img src="img/logo-transparent.png" alt="knitty logo">
+				<img src="img/logo-full.png" alt="knitty logo">
 				<h1 class="visually-hidden">Knitty.com</h1>
-				<p>Winter 2015 | Issue 54</p>
+				<a href="#"><img class="hamburger" src="img/icons/hamburger_cropped.png" alt="menu"></a>
+				<ul class="hamburger-nav visually-hidden">
+					<li><a href="#">Browse past issues</a></li>
+					<li><a href="#">Search</a></li>
+					<li><a href="#">Join our mailing list!</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
 			</div>
-			<a href="#navigation" class="menu-button">Menu</a>
 		</header>
+
+		<form id="navigation">
+			<ul>
+				<li>Issue 54 | Winter 2015:
+					<ul>
+						<li class="selected"><a href="#">Patterns</a></li>
+						<li><a href="#">Articles</a></li>
+						<li><a href="#">Reviews</a></li>
+					</ul>
+				</li>
+			</ul>
+		</form>
+
 
 		<section class="patterns">
 			<article>
@@ -26,7 +59,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/tree-8" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -40,7 +73,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/ribbon-candy-scarf-3" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -54,7 +87,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/cache-cache-cowl" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -68,7 +101,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/willow-37" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -82,7 +115,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/hexadot" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -96,7 +129,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/cervus-2" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -110,7 +143,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/cameo-flower" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -124,7 +157,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/mishigos" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -138,7 +171,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/electricity-3" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -152,7 +185,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/bimitral" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -166,7 +199,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/attention-span" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -180,7 +213,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/sidekick-boot-socks" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -194,7 +227,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/quinn-socks" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -208,7 +241,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/kastanienfeuer" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -222,7 +255,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/zazie" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -236,7 +269,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/geldys" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -250,7 +283,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/elkko" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -264,7 +297,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/helga-7" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -278,7 +311,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/antipodal" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -292,7 +325,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/vintage-memories" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -306,7 +339,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/stars-in-the-twilight" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -320,7 +353,7 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/talula-2" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
@@ -334,29 +367,18 @@
 						<li><img alt="favorite icon" src="img/icons/star-128.png"></li>
 						<li><img alt="share icon" src="img/icons/share-32.jpg"></li>
 						<li><a href="http://www.ravelry.com/patterns/library/here-be-dragons-2" target="_blank"><img alt="ravelry icon" src="img/icons/ravelry32.png"></a></li>
-						<li><input type="text" size="25" placeholder="Comment" name="comment-box"></li>
+						<li><input type="text"  placeholder="Comment" name="comment-box"></li>
 					</ul>
 				</form>
 			</article>
 		</section>
-
 		<footer>
+			<a class="past-issues" href="#">Browse past issues >></a>
 			<form>
-				<ul id="navigation">
-					<li>Also in this issue:
-						<ul>
-							<li><a href="#">Articles</a></li>
-							<li><a href="#">Reviews</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Browse past issues</a></li>
-					<li><input type="text" name="search" size="40"><input type="submit" value="Search"></li>
-				</ul>
-				<div class="jmml">
-					<h3>Join Our Mailing List!</h3>
-					<input type="text" placeholder="Email address" name="jmml" size="40"><input type="submit" value="Sign up">
-				</div>
+				<input type="text" name="search" size="40"><span class="search-button"><a href="#">Search</a></span>
 			</form>
+			<a href="#">Return to top</a>
 		</footer>
+
 	</body>
 </html>
