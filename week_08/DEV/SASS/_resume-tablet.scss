@@ -1,0 +1,49 @@
+@media screen and (min-width: 641px) {
+
+	body section:first-of-type {
+		article {
+			float:none;
+			padding-right: 0;
+			margin-bottom: 0;
+			width: 90%;
+		}
+	}
+
+	article.skillset {
+		position: relative;
+		h3 {
+			margin-top: 0;
+		}
+
+	}
+
+	article.tools {
+		@include clearfix();
+		position: relative;
+		h2 {
+			margin-top: 0;
+		}
+		h3 {
+			margin-top: 0;
+		}
+	
+	}
+
+	.col1 {
+		float: left;
+		width: 45%;
+	}
+
+	.col2 {
+		float: right;
+		width: 45%;
+		&:last-of-type {
+			margin-bottom: 2em;
+		}
+	}
+
+	.education {
+		@include clearfix();
+	}
+
+}
