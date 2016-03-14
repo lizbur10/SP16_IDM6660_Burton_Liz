@@ -1,5 +1,26 @@
 @media screen and (min-width: 641px) {
 
+	.one-half {
+		width: 50%;
+	}
+
+	.one-third {
+		width: 33%;
+	}
+
+	.two-thirds {
+		width: 66%;
+	}
+
+	.left {
+		float: left;
+		padding-right: 5%;
+	}
+
+	.right {
+		float: right;
+	}
+
 	footer {
 		@include clearfix();
 		width: 100%;

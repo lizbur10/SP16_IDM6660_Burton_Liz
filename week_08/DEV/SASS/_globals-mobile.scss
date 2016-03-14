@@ -37,12 +37,21 @@ img {
   margin: 0 auto;
 }
 
-h2, h3, h4 {
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
   font-family: $fontstack-headers;
 }
 
+h1 {
+  font-size: 1.5em;
+  color: $color-medium-blue;
+}
+
 h2 {
-  font-size: 1.4em;
+  font-size: 1.3em;
   color: $color-medium-blue;
 }
 
@@ -52,7 +61,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 0.9em;
   color: $color-dark-blue;
 }
 
@@ -74,6 +83,15 @@ a.button {
   @include button-label();
 }
 
+.text-link {
+  color: $color-medium-blue;
+  font-weight: bold;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
 body section:first-of-type {
   width: 90%;
   max-width: 800px;
@@ -86,4 +104,7 @@ footer {
   @include contact-style();
   font-size: .8em;
   margin-top: 3em;
+  a {
+    color: $color-black;
+  }
 }

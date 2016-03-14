@@ -1,6 +1,6 @@
 @mixin visually-hidden() {
   border: 0;
-  clip: rect(0 0 0 0);
+  clip: rect(0,0,0,0);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -39,7 +39,7 @@
         text-decoration: none;
         color: white;
         padding: 1.2em 4% 0.95em 4%;
-        &:hover {
+        &:hover, &.selected {
           background-color: $color-beige;
           color: $color-purple;
           font-weight: bold;
@@ -48,7 +48,7 @@
     }
   }
 
-@mixin list-style() {  //apply to li
+@mixin list-style() {  //apply to li or h4
   position: relative;
   &:before {
     content: '';

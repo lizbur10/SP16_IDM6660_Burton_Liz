@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="jquery-1.11.3.min.js"></script>
 		<title>burtonux.com</title>
 		<link rel="icon" type="image/ico" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="CSS/normalize.css">		
@@ -12,22 +13,22 @@
 
 	<body>
 		<header>
-			<h1 class="visually-hidden">Liz Burton's Home Page</h1>
-			<a href="index.html"><img class="logo" src="img/logos/logo_purple.png" alt="liz burton's logo"></a>
+			<a href="index.html"><img class="logo" src="img/logos/logo_purple.png" onmouseover="this.src='img/logos/logo_blue.png';" onmouseout="this.src='img/logos/logo_purple.png';" alt="liz burton's logo"></a>
 			<nav>
 				<ul>
 					<li><a class="selected" href="index.html">Home</a></li>
 					<li><a href="projects.html">Projects</a></li>
-					<li><a href="resume.html">Resume</a></li>
+					<li><a href="resume.html">Resum&eacute;</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<section>
+			<h1 class="visually-hidden">Liz Burton's Home Page</h1>
 <!-- 			<img src="img/headshot.jpg" alt="liz burton">
- -->			<img class="headshot" src="img/placeholder_small.jpg" alt="liz burton">
- 			<article>
+ -->			<img class="one-third right" src="img/placeholder_small.jpg" alt="liz burton">
+ 			<article class="two-thirds left">
 				<h2>About Me:</h2>
 				<p>I am an experienced UX designer/ researcher and tenacious user advocate with a deep understanding of UX design principles. I bring with me:</p> 
 				<ul>
@@ -43,8 +44,8 @@
 		<footer>
 			<h3>Contact:</h3>
 			<ul>
-				<li id="email"><span>liz.burton147@gmail.com</span></li>
-				<li id="linkedin"><span>www.linkedin.com/in/burtonux</span></li>
+				<li id="email"><a href="mailto:liz.burton147@gmail.com"><span>liz.burton147@gmail.com</span></a></li>
+				<li id="linkedin"><a href="https://www.linkedin.com/in/burtonux" target="_blank"><span>www.linkedin.com/in/burtonux</span></a></li>
 				<li id="phone"><span>(773) 710-8686</span></li>
 			</ul>
 		</footer>
