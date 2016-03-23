@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="jquery-1.11.3.min.js"></script>
+		<script>
+		    $(function() {
+		    	var selected = false;
+				$("nav li a").hover(function() {
+					if ( $(this).attr("class") == "selected") {
+						selected = true;
+						$(this).toggleClass("selected").toggleClass("menu-hover-state");
+					} else {
+						$(this).toggleClass("menu-hover-state");
+					}
+				}, function() {
+					if (selected) {
+						$(this).toggleClass("selected").toggleClass("menu-hover-state");
+						selected = false;
+					} else {
+						$(this).toggleClass("menu-hover-state");
+					}
+				});
+				$(".project-menu-item").hover(function() {
+					$("ul.sub-nav").toggleClass("visually-hidden");
+				});
+				$("nav li li").hover(function() {
+					$(".project-menu-item>a").toggleClass("menu-hover-state");
+				});
+			});
+
+		</script>
+		<title>burtonux.com</title>
+		<link rel="icon" type="image/ico" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="CSS/normalize.css">		
+		<link rel="stylesheet" type="text/css" href="CSS/home.css">
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body class="home">
+		<header>
+			<a href="index.html"><img class="logo" src="img/logos/logo_purple.png" onmouseover="this.src='img/logos/logo_blue.png';" onmouseout="this.src='img/logos/logo_purple.png';" alt="liz burton's logo"></a>
+			<nav>
+				<ul>
+					<li><a class="selected" href="index.html">Home</a></li>
+					<li class="project-menu-item"><a href="projects.html">Projects</a>
+						<ul class="sub-nav visually-hidden">
+							<li><a href="projects/mobile-app.html">Constant Contact Mobile App</a></li>
+							<li><a href="projects/galileo.html">Constant Contact Email Editor</a></li>
+							<li><a href="projects/np-site-visits.html">Non-profit Site Visits</a></li>
+							<li><a href="projects/seniors-outdoors.html">Seniors Outdoors</a></li>
+							<li><a href="projects/knitty.html">Knitty.com</a></li>
+							<li><a href="projects/class-projects.html">Development projects</a></li>
+						</ul>
+					</li>
+					<li><a href="resume.html">Resum&eacute;</a></li>
+					<li><a href="contact.php">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section>
+			<h1 class="visually-hidden">Liz Burton's Home Page</h1>
+			<img class="one-third right" src="img/placeholder.jpg" alt="liz burton">
+ 			<article class="two-thirds left">
+				<h2>About Me:</h2>
+				<p>I am an experienced UX designer/ researcher and tenacious user advocate with a deep understanding of UX design principles. The background and skills I bring include:</p> 
+				<ul class="triangle-list">
+					<li>hands-on experience with a wide array of research methods,</li>
+					<li>the ability to communicate research results clearly and effectively,</li> 
+					<li>the ability to collaborate successfully with a diverse range of stakeholders, and</li> 
+					<li>a proven record of providing actionable recommendations based on best design practices and thoughtful user research.</li>
+				</ul>
+				<p>My ideal role would allow me to continue to use and develop both my research and design skills, and provide opportunities to work in close collaboration with design teams, project owners, and other stakeholders.</p>
+			</article>
+		</section>
+
+		<footer>
+			<h3>Contact:</h3>
+			<ul>
+				<li id="email"><a href="mailto:liz.burton147@gmail.com"><span>liz.burton147@gmail.com</span></a></li>
+				<li id="linkedin"><a href="https://www.linkedin.com/in/burtonux" target="_blank"><span>www.linkedin.com/in/burtonux</span></a></li>
+				<li id="phone"><span>(773) 710-8686</span></li>
+			</ul>
+		</footer>
+	</body>
+</html>

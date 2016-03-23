@@ -1,0 +1,20 @@
+@media screen and (min-width: 641px) {
+
+	.project {
+
+		p {
+		display: block;
+		}
+
+ 		h3 {
+			margin-top: 2em;
+		}
+		img.right {
+			max-width: 600px;
+			float: none;
+			padding-left: 0;
+		}
+
+	}
+
+}

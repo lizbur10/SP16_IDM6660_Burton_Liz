@@ -1,0 +1,36 @@
+@media screen and (min-width: 641px) {
+
+	.tools {
+		@include clearfix();
+ 		width: 100%;
+ 		position: relative;
+	}
+ 
+	.education {
+		@include clearfix();
+	}
+
+	.classwork .left, .classwork .right {
+		float: none;
+		width: 100%
+	}
+
+	aside {
+		margin-top: 50px;
+		font-size: 0.9em;
+		background-color: $color-beige;
+	}
+
+	.right {
+			padding-left: 3%;
+			padding-right: 3%;
+	}
+
+	.classwork {
+		@include clearfix();
+		.right {
+			padding: 0;
+		}
+	}
+
+}

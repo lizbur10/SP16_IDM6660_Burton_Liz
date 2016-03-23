@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="../jquery-1.11.3.min.js"></script>
+		<script>
+		    $(function() {
+		    	var selected = false;
+				$("nav li a").hover(function() {
+					if ( this.className.indexOf("selected") > -1 ) {
+						selected = true;
+						$(this).toggleClass("selected").toggleClass("menu-hover-state");
+					} else {
+						$(this).toggleClass("menu-hover-state");
+					}
+				}, function() {
+					if (selected) {
+						$(this).toggleClass("selected").toggleClass("menu-hover-state");
+						selected = false;
+					} else {
+						$(this).toggleClass("menu-hover-state");
+					}
+				});
+				$(".project-menu-item").hover(function() {
+					$("ul.sub-nav").toggleClass("visually-hidden");
+				});
+				$("nav li li a").hover(function() {
+					$(".project-menu-item>a").toggleClass("menu-hover-state").toggleClass("selected");
+				});
+			});
+		</script>
+		<title>Non-profit Site Visits</title>
+		<link rel="icon" type="image/ico" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="../CSS/normalize.css">		
+		<link rel="stylesheet" type="text/css" href="../CSS/projects.css">
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<header>
+			<h1 class="visually-hidden">Site Visits to Non-profit Customers</h1>
+			<a href="../index.html"><img class="logo" src="../img/logos/logo_purple.png" onmouseover="this.src='../img/logos/logo_blue.png';" onmouseout="this.src='../img/logos/logo_purple.png';" alt="liz burton's logo"></a>
+			<nav>
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li class="project-menu-item"><a class="selected" href="../projects.html">Projects</a>
+						<ul class="sub-nav visually-hidden">
+							<li><a href="../projects/mobile-app.html">Constant Contact Mobile App</a></li>
+							<li><a href="../projects/galileo.html">Constant Contact Email Editor</a></li>
+							<li><a href="../projects/np-site-visits.html">Non-profit Site Visits</a></li>
+							<li><a href="../projects/seniors-outdoors.html">Seniors Outdoors</a></li>
+							<li><a href="../projects/knitty.html">Knitty.com</a></li>
+							<li><a href="../projects/class-projects.html">Development projects</a></li>
+						</ul>
+					</li>
+					<li><a href="../resume.html">Resum&eacute;</a></li>
+					<li><a href="../contact.php">Contact</a></li>
+				</ul>
+			</nav>
+			<a class="right" href="seniors-outdoors.html"><p class="text-link">next project &raquo;</p></a>			
+		</header>
+
+		<section class="project">
+			<div class="project-header">
+				<h2>Non-profit Site visits</h2>
+				<h4>Contextual inquiry, wants and needs analysis, user segmentation</h4>
+			</div>
+			<img class="right" src="../img/projects/NPSiteVisits.jpg" alt="Non-profit site visits">
+
+			<div>
+				<h3>The Project</h3>
+				<p>Site visits to a number of non-profit customer organizations to obtain a better understanding of this segment of Constant Contact's user base.</p>
+			</div>
+
+			<div>
+				<h3>The Problem</h3>
+				<p>This study arose in response to feedback from some non-profit customers about products and services that are geared more toward commercial customers and aren't as well suited to meet the needs of non-profits. Because non-profit organizations make up a sizable portion of Constant Contact's customer base, there was a need to gain a better understanding of the needs and usage patterns of this user segment.</p>
+			</div>
+
+			<div>
+				<h3>The Approach</h3>
+				<p>A major challenge was to obtain authentic, in-context information from the participating organizations. Because the cadence of most customers' work with the product is intermittent, purely observational techniques were not feasible. Therefore, a hybrid approach was used that included both an interview and a predetermined observational opportunity. The interviews provided consistent information across all participating organizations. For the observational portion, we asked participants to be sure to have a real email campaign that they could work on while we were there so we could observe their process.</p>
+			</div>
+
+			<div>
+				<h3>The Result</h3>
+				<p>Based on the results of the study we compiled:</p>
+				<ul class="triangle-list">
+					<li>Sub-categories of NP organizations, based on usage factors, priorities, limitations, etc.</li> 
+					<li>Descriptions of usage factors that are particularly salient for this segment of users</li>
+					<li>Ratings of the importance of each of the usage factors for each sub-category</li>
+				</ul>
+				<p>This information can help the company to better target the unique needs of this customer segment, and can also be used to inform persona development and refinement.</p>
+			</div>
+
+			<div>
+				<h3>My Role</h3>
+				<ul class="triangle-list">
+					<li>Plan, conduct, and report out on the site visits.</li>
+					<li>Coordinate the efforts of multiple two-person visiting teams, consisting of a researcher and a design team member.</li>
+				</ul>
+			</div>
+			<a class="right" href="seniors-outdoors.html"><p class="text-link">next project &raquo;</p></a>
+		</section>
+
+		<footer>
+			<h3>Contact:</h3>
+			<ul>
+				<li id="email"><a href="mailto:liz.burton147@gmail.com"><span>liz.burton147@gmail.com</span></a></li>
+				<li id="linkedin"><a href="https://www.linkedin.com/in/burtonux" target="_blank"><span>www.linkedin.com/in/burtonux</span></a></li>
+				<li id="phone"><span>(773) 710-8686</span></li>
+			</ul>
+		</footer>
+	</body>
+</html>
