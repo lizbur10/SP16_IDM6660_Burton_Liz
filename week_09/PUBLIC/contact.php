@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="modernizr.js"></script>
 		<script src="jquery-1.11.3.min.js"></script>
 		<script>
 		    $(function() {
 		    	var selected = false;
-				$("nav li a").hover(function() {
+				$(".no-touchevents nav li a").hover(function() {
 					if ( $(this).attr("class") == "selected") {
 						selected = true;
 						$(this).toggleClass("selected").toggleClass("menu-hover-state");
@@ -22,10 +23,10 @@
 						$(this).toggleClass("menu-hover-state");
 					}
 				});
-				$(".project-menu-item").hover(function() {
+				$(".no-touchevents .project-menu-item").hover(function() {
 					$("ul.sub-nav").toggleClass("visually-hidden");
 				});
-				$("nav li li").hover(function() {
+				$(".no-touchevents nav li li").hover(function() {
 					$(".project-menu-item>a").toggleClass("menu-hover-state");
 				});
 			});

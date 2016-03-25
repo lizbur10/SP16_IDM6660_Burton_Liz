@@ -69,6 +69,11 @@ nav {
   }
 }
 
+.touchevents nav li a {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 
 nav .sub-nav {
   z-index: 2;
@@ -96,8 +101,6 @@ nav .sub-nav {
   color: $color-purple;
   font-weight: bold;
 }
-
-
 
 a {
   text-decoration: none;

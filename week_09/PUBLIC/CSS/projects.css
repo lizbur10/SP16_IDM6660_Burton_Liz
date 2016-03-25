@@ -58,6 +58,10 @@ nav {
         background-color: #586F7C;
         color: white; }
 
+.touchevents nav li a {
+  padding-left: 5%;
+  padding-right: 5%; }
+
 nav .sub-nav {
   z-index: 2;
   opacity: 0.95;
