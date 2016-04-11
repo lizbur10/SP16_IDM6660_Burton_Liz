@@ -1,0 +1,624 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #444;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;nav
+}
+
+hr {
+    display: block;
+    height: 3em;
+    margin: 3em 0;
+    padding: 0;
+    width: 100%;
+    border: 0;
+    background-color: #F4F4F9;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px 'Oswald', sans-serif;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+h1, h2, h3 {
+    font-family: 'Passion One', cursive;
+    font-weight: 400;
+    color: #E44D26;
+    letter-spacing: 1px;
+}
+
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+
+.footer-container,
+.main aside {
+    border-top: 20px solid #e44d26;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    background: #f16529;
+}
+
+.title {
+    color: #F4F4F9;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+.header-container {
+    border-bottom: none;
+}
+
+nav {
+    display: none;
+}
+
+#showmenu, nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#showmenu, nav a {
+    display: block;
+    margin-bottom: 0.75em;
+    padding: 1em 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: #F4F4F9;
+    background: #e44d26;
+}
+
+#showmenu:visited, nav a:visited {
+    color: #F4F4F9;
+}
+
+#showmenu:hover {
+    color: #e44d26;
+    background-color: #F4F4F9;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #e44d26;
+    background-color: #F4F4F9;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+
+
+.main {
+    padding: 1.5em 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: #F4F4F9;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: #F4F4F9;
+    padding: 20px 0;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.banner {
+    background-color: #F4F4F9;
+    padding: 2em;
+}
+
+.banner-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #F4F4F9;
+    background-color: #f16529;
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin: 0;
+    font-size: 2em;
+    line-height: 1;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    line-height: 1;
+}
+
+.banner span {
+    display: block;
+    font-size: 0.5em;
+    padding-top: 2em;
+    text-align: right;
+    color: #444;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 2em auto;
+}
+
+#about {
+    max-width: 500px;
+    margin: 3em auto 5em;
+    padding: 1em;
+}
+
+#about h2 {
+    margin-bottom: 0;
+}
+
+#about p {
+    font-size: 1.2em;
+}
+
+
+#what-i-do section {
+    width: 90%;
+    padding: 1em;
+    background-color: #F4F4F9;
+    margin: 0 auto;
+}
+
+#what-i-do h2 {
+    margin-left: 0.25em;
+}
+
+#what-i-do section:nth-of-type(even) {
+    background-color: #f16529;
+    color: #F4F4F9;
+}
+
+#what-i-do section:nth-of-type(even) h3 {
+    color: #333;
+}
+
+#contact {
+    background-color: #F4F4F9;
+    padding: 1em;
+    width: 90%;
+    max-width: 709px;
+    margin: 8em auto 1em auto;
+}
+
+#contact h2 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contact input {
+    display: block;
+    width: 80%;
+    border: 0px;
+    padding: .75em 5%;
+    font-size: 1em;
+    margin: 0 auto;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: white;
+    color: #000000;  
+}  
+#contact input[name="message"] {
+        padding-bottom: 9em;
+    }
+
+
+#contact input[type=submit] {
+    display: block;
+    background-color: #f16529;
+    opacity: 1.0;
+    width: 10em;
+    height: 5em;
+    margin: 0 auto;
+    color: #F4F4F9;
+    font-size: 1em;
+}
+
+footer a {
+    position: fixed;
+    left: 0;
+    bottom: 70px;
+    padding: 0 10px;
+    line-height: 3rem;
+    font-weight: bold;
+    color: #E44D26;
+    background-color: white;
+    border: 1px #F16529 solid;
+    border-left: none;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    .header-container {
+        border-bottom: 20px solid #e44d26;
+    }
+
+    #showmenu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+    
+    nav a {
+        float: left;
+        margin: 10px 2%;
+        padding: 5px;
+        background-color: #F16529;
+        border-radius: 3px;
+        font-size: 1.2em;
+    }
+
+    nav a:hover {
+    -webkit-transition: color 1s, background-color 1s;
+    -moz-transition: 1s all ease-out;
+    transition: 1s all ease-out;
+}
+
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+
+/* =============================
+    INTERMEDIATE: Custom Styles
+   ============================= */
+
+    h2 {
+        text-align: center;
+    }
+
+    .banner {
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+
+    .banner h2 {
+        text-align: left;
+        font-size: 3em;
+    }
+
+    #about h2 {
+        padding-bottom: 1em;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+/*    .title {
+        float: left;
+    }
+*/
+    nav a {
+        width: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+
+
+/* =====================
+    WIDE: Custom styles
+   ===================== */
+
+    #what-i-do {
+        width: 740px;
+        margin: 0 auto;
+    }
+
+    #what-i-do section {
+        width: 338px;
+        height: 13em;
+    }
+
+    #what-i-do section:nth-of-type(3) {
+        background-color: #F16529;
+        color: #F4F4F9;
+    }
+
+    #what-i-do section:nth-of-type(3) h3 {
+        color: #444;
+        }    
+
+    #what-i-do section:nth-of-type(4) {
+        background-color: #F4F4F9;
+        color: #444;
+    }
+
+    #what-i-do section:nth-of-type(4) h3 {
+        color: #E44D26;
+        }    
+
+    #what-i-do section:nth-of-type(odd) {
+        float: left;
+
+    }
+
+    #what-i-do section:nth-of-type(even) {
+        float: right;
+    }
+
+}
+
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
